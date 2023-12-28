@@ -28,6 +28,7 @@ function ShowTask(props) {
                         style={{
                           position: "relative",
                           left: "170px",
+                          cursor: "pointer",
                           color: "blue",
                         }}
                         size={24}
@@ -41,6 +42,7 @@ function ShowTask(props) {
                         style={{
                           position: "relative",
                           left: "180px",
+                          cursor: "pointer",
                           color: "red",
                         }}
                         className="deleteBtn"
