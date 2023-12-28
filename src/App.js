@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// importing corresponding css
+import "./App.css";
 
+// importing reactNotification library
+import { ReactNotifications } from "react-notifications-component";
+
+// importing various sub-components
+import Header from "./components/Header/Header";
+import TodoContainer from "./components/TodoContainer/TodoContainer";
+import Footer from "./components/Footer/Footer";
+
+// Functional Component App
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Using React Notifications for rendering up all the notifications */}
+      <ReactNotifications />
+      <Header />
+      {/* Rendering the todo container */}
+      <TodoContainer />
+
+      <Footer />
     </div>
   );
 }

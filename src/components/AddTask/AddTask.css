@@ -1,0 +1,97 @@
+.taskContainer {
+    width: 1100px;
+    padding: 10px;
+    padding-left: 240px;
+    height: 30%;
+    background-color: green;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .taskContainer form {
+    height: 100%;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .taskContainer form label {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 25px;
+    bottom: 8px;
+    color: white;
+  }
+  
+  .taskContainer form input {
+    width: 500px;
+    height: 55px;
+    border-radius: 25px;
+    padding: 0.2rem;
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+    padding-left: 80px;
+  }
+  
+  .input {
+    position: relative;
+    font-size: 1.5em;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+  }
+  
+  .input *:not(span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 1;
+  }
+  
+  input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #0c3b1c;
+    min-width: 12em;
+  }
+  
+  ::-moz-placeholder {
+    color: #cbd0d5;
+  }
+  
+  :-ms-input-placeholder {
+    color: #cbd0d5;
+  }
+  
+  ::placeholder {
+    color: #cbd0d5;
+  }
+  
+  .taskContainer form button {
+    padding: 0.4rem;
+    border-radius: 10px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    background-color: #193517;
+    color: whitesmoke;
+    position: relative;
+    border: 2px solid #081d0b;
+    right: 170px;
+    top: 20px;
+  }
+  
+  .taskContainer form button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #193517;
+  }
