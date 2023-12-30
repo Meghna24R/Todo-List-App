@@ -8,7 +8,6 @@ import CardGroup from "react-bootstrap/CardGroup";
 // importing react icons
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { CiCircleCheck } from "react-icons/ci";
-import { FaCheckCircle } from "react-icons/fa";
 
 // Creating a Functional component for creating all task
 function ShowTask(props) {
@@ -65,7 +64,7 @@ function ShowTask(props) {
                           fontSize: "25px",
                           cursor: "pointer",
                           backgroundColor: "green",
-                          borderRadius: "50px"
+                          borderRadius: "50px",
                         } : {
                           position: "relative",
                           right: "50px",
@@ -77,7 +76,7 @@ function ShowTask(props) {
 
                     </Card.Header>
                     <Card.Body>
-                      <Card.Title>{post.title}</Card.Title>
+                      <Card.Title style={post.completed ?{textDecoration:"line-through"}: {textDecoration: "none"}}>{post.title}</Card.Title>
                       <Card.Text></Card.Text>
                     </Card.Body>
                     <Card.Footer></Card.Footer>
